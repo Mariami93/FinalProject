@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  Final
+
+  Created by Mariami on 7/24/21.
+  
+*/
+
+
+"currentLanguage" = "ქართული";
+"theme" = "თემის შეცვლა";
+"continue" = "გაგრძელება";
+"finish" = "დასრულება";
+"registration" = "რეგისტრაცია";
+"logIn" = "ავტორიზაცია";
+"name" = "სახელი";
+"surname" = "გვარი";
+"email" = "ელ-ფოსტა";
+"privateNumber" = "პირადი ნომერი";
+"password" = "პაროლი";
+"confirmPassword" = "გაიმეორეთ პაროლი";
+"language" = "ენა";
+"settings" = "პარამეტრები";
+"selectLanguage" = "აირჩიეთ სასურველი ენა";
+"georgian" = "ქართული";
+"english" = "English";
+"eng" = "ინგ";
+"rus" = "რუს";
+"geo" = "ქართ";
+"cancel" = "გაუქმება";
+"currentPassword" = "მიმდინარე პაროლი";
+"changePassword" = "პაროლის შეცვლა";
+"savePassword" = "პაროლის შენახვა";
+"newPassword" = "ახალი პაროლი";
+"cancelFilter" = "ფილტრის გაუქმება";
+"cinema" = "კინოთეატრი";
+"genre" = "ჟანრი";
+"chooseCinema" = "აირჩიეთ კინოთეატრი";
+"chooseGenre" = "აირჩიეთ ჟანრი";
+"filter" = "ფილტრი";
+"buy" = "ყიდვა";
+"selectSeat"= "აირჩიეთ სასურველი ადგილი";
+"movies" = "ფილმები";
+"tickets" = "ბილეთები";
+"account" = "ავტორიზაცია";
+"signOut" = "გასვლა";

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="lgX-DK-yRG">
+            <objects>
+                <navigationController storyboardIdentifier="MovieNavID" id="Hrp-ju-hNd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UAV-zZ-Ujv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cyH-l0-d2t" kind="relationship" relationship="rootViewController" id="ocP-X9-V4Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SjL-8e-h4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383" y="-198"/>
+        </scene>
+        <!--Movie View Controller-->
+        <scene sceneID="yL0-xF-T6z">
+            <objects>
+                <viewController storyboardIdentifier="MovieViewController" id="cyH-l0-d2t" customClass="MovieViewController" customModule="Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7XP-yD-xNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ex0-Wn-INI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7cK-dU-43g">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WOr-1n-weW">
+                                <rect key="frame" x="0.0" y="321" width="414" height="1175"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="b0e-su-nao">
+                                        <rect key="frame" x="32" y="100" width="350" height="250"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-bC-UYa">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="115"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="კინოთეატრი" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="US8-o5-G7K" customClass="LocalizedLabeL" customModule="Final" customModuleProvider="target">
+                                                        <rect key="frame" x="40" y="20" width="111.5" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="cmb-J2-1Xi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                                        <color key="textColor" name="selectedBorder"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="key" value="cinema"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="აირჩიეთ კინოთეატრი" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAn-t4-eOL" customClass="LocalizedLabeL" customModule="Final" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="60" width="184.5" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="bZf-k8-ZTT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="selectedBorder"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="key" value="chooseCinema"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kj-mG-V7o">
+                                                        <rect key="frame" x="201.5" y="72.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="25" id="YJi-Xi-6tw"/>
+                                                            <constraint firstAttribute="height" constant="25" id="dN1-nu-GZx"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="selectedBorder"/>
+                                                        <state key="normal" image="arrow.down.app.fill" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="dropCinema:" destination="cyH-l0-d2t" eventType="touchUpInside" id="XL9-M6-c3k"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="US8-o5-G7K" firstAttribute="top" secondItem="0Bf-bC-UYa" secondAttribute="top" constant="20" id="0fh-VK-SGh"/>
+                                                    <constraint firstItem="cAn-t4-eOL" firstAttribute="leading" secondItem="0Bf-bC-UYa" secondAttribute="leading" constant="10" id="3zx-Ay-Nd9"/>
+                                                    <constraint firstItem="5kj-mG-V7o" firstAttribute="leading" secondItem="US8-o5-G7K" secondAttribute="trailing" constant="50" id="ABE-QR-SLu"/>
+                                                    <constraint firstItem="US8-o5-G7K" firstAttribute="leading" secondItem="0Bf-bC-UYa" secondAttribute="leading" constant="40" id="Ozm-vJ-3wg"/>
+                                                    <constraint firstItem="5kj-mG-V7o" firstAttribute="centerY" secondItem="cAn-t4-eOL" secondAttribute="centerY" id="Qw2-Im-Y4c"/>
+                                                    <constraint firstItem="cAn-t4-eOL" firstAttribute="top" secondItem="US8-o5-G7K" secondAttribute="bottom" constant="10" id="hVD-sB-UWs"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRS-u4-Fg4">
+                                                <rect key="frame" x="0.0" y="135" width="350" height="115"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ei2-Lx-CVl">
+                                                        <rect key="frame" x="201.5" y="72.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="25" id="RvC-my-3eB"/>
+                                                            <constraint firstAttribute="height" constant="25" id="sm4-d6-7YN"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="selectedBorder"/>
+                                                        <state key="normal" image="arrow.down.app.fill" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="dropGenre:" destination="cyH-l0-d2t" eventType="touchUpInside" id="Qe5-ar-dQQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ჟანრი" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVD-Hm-9pW" customClass="LocalizedLabeL" customModule="Final" customModuleProvider="target">
+                                                        <rect key="frame" x="40" y="20" width="52.5" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="afz-Ob-s6e"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                                        <color key="textColor" name="selectedBorder"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="key" value="genre"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="აირჩიეთ ჟანრი" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8p-El-KvA" customClass="LocalizedLabeL" customModule="Final" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="60" width="128" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="Vkf-e2-vpJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="selectedBorder"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="key" value="chooseGenre"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Ei2-Lx-CVl" firstAttribute="centerY" secondItem="G8p-El-KvA" secondAttribute="centerY" id="94v-cQ-xzu"/>
+                                                    <constraint firstItem="vVD-Hm-9pW" firstAttribute="leading" secondItem="IRS-u4-Fg4" secondAttribute="leading" constant="40" id="Joa-Aw-ktb"/>
+                                                    <constraint firstItem="G8p-El-KvA" firstAttribute="leading" secondItem="IRS-u4-Fg4" secondAttribute="leading" constant="10" id="bDK-Gf-HMB"/>
+                                                    <constraint firstItem="vVD-Hm-9pW" firstAttribute="top" secondItem="IRS-u4-Fg4" secondAttribute="top" constant="20" id="niG-aI-XCP"/>
+                                                    <constraint firstItem="G8p-El-KvA" firstAttribute="top" secondItem="vVD-Hm-9pW" secondAttribute="bottom" constant="10" id="qCn-Qy-YfC"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ei2-Lx-CVl" firstAttribute="leading" secondItem="5kj-mG-V7o" secondAttribute="leading" id="7zx-La-0Rf"/>
+                                            <constraint firstAttribute="width" constant="350" id="Ree-ks-eXJ"/>
+                                            <constraint firstAttribute="height" constant="250" id="ZQA-h0-Yvb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHg-kT-5r0" customClass="LocalizedButton" customModule="Final" customModuleProvider="target">
+                                        <rect key="frame" x="221" y="15" width="178" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="pEf-be-CYv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="ფილტრის გაუქმება">
+                                            <color key="titleColor" name="menuSelectedColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="key" value="cancelFilter"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cancelFilter:" destination="cyH-l0-d2t" eventType="touchUpInside" id="xne-dt-OKk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6F-7k-Mww">
+                                        <rect key="frame" x="15" y="15" width="81" height="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="ფილტრი">
+                                            <color key="titleColor" name="menuSelectedColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="filterAction:" destination="cyH-l0-d2t" eventType="touchUpInside" id="gI0-eJ-v3e"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-S7-NGV">
+                                        <rect key="frame" x="167" y="5" width="80" height="3"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3" id="3PD-3V-e8S"/>
+                                            <constraint firstAttribute="width" constant="80" id="ff8-Xw-jrd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstItem="I6F-7k-Mww" firstAttribute="top" secondItem="WOr-1n-weW" secondAttribute="top" constant="15" id="0qx-H4-PwA"/>
+                                    <constraint firstAttribute="height" constant="600" id="2Cf-I0-ANl"/>
+                                    <constraint firstItem="SK9-S7-NGV" firstAttribute="centerX" secondItem="WOr-1n-weW" secondAttribute="centerX" id="Sh9-Gs-uH8"/>
+                                    <constraint firstItem="b0e-su-nao" firstAttribute="centerX" secondItem="WOr-1n-weW" secondAttribute="centerX" id="b7R-jo-P2y"/>
+                                    <constraint firstItem="dHg-kT-5r0" firstAttribute="top" secondItem="WOr-1n-weW" secondAttribute="top" constant="15" id="fN8-mL-SFp"/>
+                                    <constraint firstItem="I6F-7k-Mww" firstAttribute="height" secondItem="dHg-kT-5r0" secondAttribute="height" id="ls5-Hd-c3b"/>
+                                    <constraint firstItem="I6F-7k-Mww" firstAttribute="leading" secondItem="WOr-1n-weW" secondAttribute="leading" constant="15" id="oqr-eS-ESv"/>
+                                    <constraint firstAttribute="trailing" secondItem="dHg-kT-5r0" secondAttribute="trailing" constant="15" id="qyd-8y-FdX"/>
+                                    <constraint firstItem="SK9-S7-NGV" firstAttribute="top" secondItem="WOr-1n-weW" secondAttribute="top" constant="5" id="u1B-Io-KuP"/>
+                                    <constraint firstItem="b0e-su-nao" firstAttribute="top" secondItem="WOr-1n-weW" secondAttribute="top" constant="100" id="w23-3y-Stl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s5s-cl-rxD"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ex0-Wn-INI" firstAttribute="top" secondItem="s5s-cl-rxD" secondAttribute="top" id="2j2-WH-FUQ"/>
+                            <constraint firstItem="WOr-1n-weW" firstAttribute="top" secondItem="7XP-yD-xNZ" secondAttribute="bottom" id="Gnn-CV-izH"/>
+                            <constraint firstItem="WOr-1n-weW" firstAttribute="leading" secondItem="s5s-cl-rxD" secondAttribute="leading" id="HWk-VT-jcP"/>
+                            <constraint firstItem="ex0-Wn-INI" firstAttribute="leading" secondItem="s5s-cl-rxD" secondAttribute="leading" id="IUK-t2-fLr"/>
+                            <constraint firstItem="s5s-cl-rxD" firstAttribute="trailing" secondItem="ex0-Wn-INI" secondAttribute="trailing" id="TMQ-J3-ZfB"/>
+                            <constraint firstAttribute="bottom" secondItem="ex0-Wn-INI" secondAttribute="bottom" id="vj7-tk-gq8"/>
+                            <constraint firstItem="WOr-1n-weW" firstAttribute="trailing" secondItem="s5s-cl-rxD" secondAttribute="trailing" id="yf8-pv-1gt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jga-7j-PXd">
+                        <barButtonItem key="leftBarButtonItem" image="menu-icon" id="YIo-sS-drU">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cinemaView" destination="0Bf-bC-UYa" id="RF5-JU-LD1"/>
+                        <outlet property="collectionView" destination="ex0-Wn-INI" id="mbj-Dd-0XD"/>
+                        <outlet property="dropCinemaLabel" destination="cAn-t4-eOL" id="5C0-wo-yFC"/>
+                        <outlet property="dropDownCinemaView" destination="0Bf-bC-UYa" id="wif-my-zLi"/>
+                        <outlet property="dropDownGenreView" destination="IRS-u4-Fg4" id="W7f-IX-VOP"/>
+                        <outlet property="dropGenreLabel" destination="G8p-El-KvA" id="2gJ-cZ-ZJL"/>
+                        <outlet property="filterVIewTopConstraint" destination="Gnn-CV-izH" id="dHq-1c-vxW"/>
+                        <outlet property="filterView" destination="WOr-1n-weW" id="0KF-aK-vdF"/>
+                        <outlet property="genreView" destination="IRS-u4-Fg4" id="qd5-xd-cma"/>
+                        <outlet property="sideMenuBtn" destination="YIo-sS-drU" id="2qM-gP-egv"/>
+                        <outlet property="topFilterBtn" destination="I6F-7k-Mww" id="YoJ-Qb-I2O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1mS-CT-Sds" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298.55072463768118" y="-198.21428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.down.app.fill" catalog="system" width="128" height="114"/>
+        <image name="menu-icon" width="25" height="25"/>
+        <namedColor name="menuSelectedColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="selectedBorder">
+            <color red="0.19900000095367432" green="0.41999998688697815" blue="0.5339999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

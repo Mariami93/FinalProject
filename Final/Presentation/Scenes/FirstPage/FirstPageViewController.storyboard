@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="alk-sanet.ttf">
+            <string>ALKSanet</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--First Page View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstPageViewController" id="BYZ-38-t0r" customClass="FirstPageViewController" customModule="Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="აირჩიეთ სასურველი ენა" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kl-MW-Myl" customClass="LocalizedLabeL" customModule="Final" customModuleProvider="target">
+                                <rect key="frame" x="20" y="194" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3vm-zp-ax4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ALKSanet" family="ALK Sanet" pointSize="17"/>
+                                <color key="textColor" name="selectedBorder"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="key" value="selectLanguage"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYl-fS-UQw" customClass="CustomButton" customModule="Final" customModuleProvider="target">
+                                <rect key="frame" x="20" y="264" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nhe-16-wke"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ALKSanet" family="ALK Sanet" pointSize="17"/>
+                                <state key="normal" title="ქართული">
+                                    <color key="titleColor" name="selectedBorder"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="key" value="georgian"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="georgian:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ks-gb-ZO5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yp-VU-lZN" customClass="CustomButton" customModule="Final" customModuleProvider="target">
+                                <rect key="frame" x="20" y="334" width="374" height="50"/>
+                                <fontDescription key="fontDescription" name="ALKSanet" family="ALK Sanet" pointSize="17"/>
+                                <state key="normal" title="English">
+                                    <color key="titleColor" name="selectedBorder"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="key" value="english"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="english:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C42-WT-zXW"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCW-50-B01">
+                                <rect key="frame" x="20" y="404" width="374" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paintbrush" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QCg-1V-aNo">
+                                        <rect key="frame" x="45" y="14" width="35" height="37.5"/>
+                                        <color key="tintColor" name="selectedBorder"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="OMg-sy-c6C"/>
+                                            <constraint firstAttribute="width" constant="35" id="ORP-sz-pEj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="მუქი თემა" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkG-As-Qh6" customClass="LocalizedLabeL" customModule="Final" customModuleProvider="target">
+                                        <rect key="frame" x="105" y="22.5" width="84.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="ALKSanet" family="ALK Sanet" pointSize="17"/>
+                                        <color key="textColor" name="selectedBorder"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="key" value="theme"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bsy-5X-gFd">
+                                        <rect key="frame" x="295" y="17" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="chooseTheme:" destination="BYZ-38-t0r" eventType="valueChanged" id="8cu-ly-U76"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wkG-As-Qh6" firstAttribute="centerY" secondItem="QCg-1V-aNo" secondAttribute="centerY" id="3bi-AJ-CVp"/>
+                                    <constraint firstItem="QCg-1V-aNo" firstAttribute="top" secondItem="zCW-50-B01" secondAttribute="top" constant="15" id="IQI-ad-FDs"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bsy-5X-gFd" secondAttribute="trailing" constant="30" id="N74-kl-6Vn"/>
+                                    <constraint firstItem="wkG-As-Qh6" firstAttribute="leading" secondItem="QCg-1V-aNo" secondAttribute="trailing" constant="25" id="aJr-68-uGC"/>
+                                    <constraint firstItem="QCg-1V-aNo" firstAttribute="leading" secondItem="zCW-50-B01" secondAttribute="leading" constant="45" id="fe2-rq-HFN"/>
+                                    <constraint firstAttribute="height" constant="60" id="hQ5-9S-6FY"/>
+                                    <constraint firstItem="Bsy-5X-gFd" firstAttribute="centerY" secondItem="QCg-1V-aNo" secondAttribute="centerY" id="lGG-E5-xbi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOc-9d-Iz7" customClass="LocalizedButton" customModule="Final" customModuleProvider="target">
+                                <rect key="frame" x="20" y="752" width="374" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4iF-nO-Mav"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ALKSanet" family="ALK Sanet" pointSize="20"/>
+                                <state key="normal" title="გაგრძელება">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="key" value="continue"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="moveNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZU7-q5-Nkz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2yp-VU-lZN" firstAttribute="height" secondItem="AYl-fS-UQw" secondAttribute="height" id="3Wt-8u-xRn"/>
+                            <constraint firstItem="2yp-VU-lZN" firstAttribute="top" secondItem="AYl-fS-UQw" secondAttribute="bottom" constant="20" id="5jN-YU-HwE"/>
+                            <constraint firstItem="2yp-VU-lZN" firstAttribute="trailing" secondItem="AYl-fS-UQw" secondAttribute="trailing" id="RG0-Tf-XiM"/>
+                            <constraint firstItem="zCW-50-B01" firstAttribute="trailing" secondItem="4Kl-MW-Myl" secondAttribute="trailing" id="UhJ-pD-xXQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SOc-9d-Iz7" secondAttribute="trailing" constant="20" id="aaC-oC-sHH"/>
+                            <constraint firstItem="2yp-VU-lZN" firstAttribute="leading" secondItem="AYl-fS-UQw" secondAttribute="leading" id="bAO-1G-qK9"/>
+                            <constraint firstItem="SOc-9d-Iz7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ei2-Hb-8IG"/>
+                            <constraint firstItem="4Kl-MW-Myl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="foQ-kr-jGZ"/>
+                            <constraint firstItem="AYl-fS-UQw" firstAttribute="top" secondItem="4Kl-MW-Myl" secondAttribute="bottom" constant="30" id="gLN-yI-v0s"/>
+                            <constraint firstItem="zCW-50-B01" firstAttribute="top" secondItem="2yp-VU-lZN" secondAttribute="bottom" constant="20" id="i71-ZV-Fsi"/>
+                            <constraint firstItem="AYl-fS-UQw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="j1q-Yk-POB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SOc-9d-Iz7" secondAttribute="bottom" constant="60" id="kbK-yC-wyg"/>
+                            <constraint firstItem="4Kl-MW-Myl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="q1M-90-lAZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AYl-fS-UQw" secondAttribute="trailing" constant="20" id="rx5-Nv-KMf"/>
+                            <constraint firstItem="zCW-50-B01" firstAttribute="leading" secondItem="4Kl-MW-Myl" secondAttribute="leading" id="udF-pp-keA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Kl-MW-Myl" secondAttribute="trailing" constant="20" id="v2m-XQ-K2Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="U0R-eC-h7i"/>
+                    <connections>
+                        <outlet property="continueBtn" destination="SOc-9d-Iz7" id="mHO-HX-0xW"/>
+                        <outlet property="englishBtn" destination="2yp-VU-lZN" id="ANn-WM-pin"/>
+                        <outlet property="generalLabel" destination="4Kl-MW-Myl" id="fsG-jj-Ipq"/>
+                        <outlet property="georgianBtn" destination="AYl-fS-UQw" id="IzQ-cn-TYh"/>
+                        <outlet property="mySwitch" destination="Bsy-5X-gFd" id="aZh-eJ-Za6"/>
+                        <outlet property="themeView" destination="zCW-50-B01" id="zlP-nD-JNT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paintbrush" catalog="system" width="122" height="128"/>
+        <namedColor name="selectedBorder">
+            <color red="0.19900000095367432" green="0.41999998688697815" blue="0.5339999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

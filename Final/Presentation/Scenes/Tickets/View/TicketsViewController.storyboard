@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tickets View Controller-->
+        <scene sceneID="Q3w-Ms-c6y">
+            <objects>
+                <viewController storyboardIdentifier="TicketsViewController" id="LIl-oT-6OP" customClass="TicketsViewController" customModule="Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="swd-fz-PEk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="თქვენი ბილეთები" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLM-ZG-QS2">
+                                <rect key="frame" x="20" y="108" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" name="buttonBG"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5TI-vy-589">
+                                <rect key="frame" x="0.0" y="144.5" width="414" height="717.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vIE-xV-I28"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5TI-vy-589" firstAttribute="top" secondItem="yLM-ZG-QS2" secondAttribute="bottom" constant="10" id="8Lz-pO-Vsi"/>
+                            <constraint firstItem="yLM-ZG-QS2" firstAttribute="leading" secondItem="vIE-xV-I28" secondAttribute="leading" constant="20" id="Cmd-dT-H8m"/>
+                            <constraint firstItem="yLM-ZG-QS2" firstAttribute="top" secondItem="vIE-xV-I28" secondAttribute="top" constant="20" id="Op4-Ez-2D0"/>
+                            <constraint firstItem="vIE-xV-I28" firstAttribute="trailing" secondItem="yLM-ZG-QS2" secondAttribute="trailing" constant="20" id="P7h-HH-01s"/>
+                            <constraint firstItem="vIE-xV-I28" firstAttribute="bottom" secondItem="5TI-vy-589" secondAttribute="bottom" id="UMI-MS-2SN"/>
+                            <constraint firstItem="vIE-xV-I28" firstAttribute="trailing" secondItem="5TI-vy-589" secondAttribute="trailing" id="hC3-3B-mXt"/>
+                            <constraint firstItem="5TI-vy-589" firstAttribute="leading" secondItem="vIE-xV-I28" secondAttribute="leading" id="om9-A3-KJz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="maB-nU-Iwf"/>
+                    <connections>
+                        <outlet property="tableView" destination="5TI-vy-589" id="JNA-Ac-vqE"/>
+                        <outlet property="titleLabel" destination="yLM-ZG-QS2" id="aPk-Gg-PRU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IS3-vM-Ssi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818.84057971014499" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lCY-8X-0OI">
+            <objects>
+                <navigationController storyboardIdentifier="TicketNavID" automaticallyAdjustsScrollViewInsets="NO" id="6n7-px-fJn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d0z-L8-BUf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LIl-oT-6OP" kind="relationship" relationship="rootViewController" id="GL2-8x-nkc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymt-0y-rhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-91.304347826086968" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="buttonBG">
+            <color red="0.28700000047683716" green="0.44200000166893005" blue="0.64899998903274536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

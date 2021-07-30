@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="alk-sanet.ttf">
+            <string>ALKSanet</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="184" id="8xm-k8-jJc" customClass="CinemaCell" customModule="Final" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="247" height="184"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8xm-k8-jJc" id="fDr-Oj-6K9">
+                <rect key="frame" x="0.0" y="0.0" width="247" height="184"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cinema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D77-hr-UPR">
+                        <rect key="frame" x="15" y="15" width="217" height="15"/>
+                        <fontDescription key="fontDescription" name="ALKSanet" family="ALK Sanet" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address: kostava" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVg-ad-1VI">
+                        <rect key="frame" x="15" y="40" width="217" height="15"/>
+                        <fontDescription key="fontDescription" name="ALKSanet" family="ALK Sanet" pointSize="12"/>
+                        <color key="textColor" red="0.68627450980000004" green="0.75686274509999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chM-FL-suc">
+                        <rect key="frame" x="15" y="65" width="217" height="15"/>
+                        <fontDescription key="fontDescription" name="ALKSanet" family="ALK Sanet" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vbQ-bC-fxU">
+                        <rect key="frame" x="10" y="90" width="227" height="94"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qCK-Jp-HkN">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uVg-ad-1VI" firstAttribute="leading" secondItem="D77-hr-UPR" secondAttribute="leading" id="7Nq-KV-r27"/>
+                    <constraint firstItem="D77-hr-UPR" firstAttribute="leading" secondItem="fDr-Oj-6K9" secondAttribute="leading" constant="15" id="Bwr-ml-6W2"/>
+                    <constraint firstItem="uVg-ad-1VI" firstAttribute="trailing" secondItem="D77-hr-UPR" secondAttribute="trailing" id="CnG-jL-fi1"/>
+                    <constraint firstItem="chM-FL-suc" firstAttribute="height" secondItem="D77-hr-UPR" secondAttribute="height" id="Fyg-Y9-8ab"/>
+                    <constraint firstItem="chM-FL-suc" firstAttribute="trailing" secondItem="D77-hr-UPR" secondAttribute="trailing" id="GG7-C0-NkG"/>
+                    <constraint firstAttribute="trailing" secondItem="vbQ-bC-fxU" secondAttribute="trailing" constant="10" id="Ogb-XF-0Qb"/>
+                    <constraint firstItem="uVg-ad-1VI" firstAttribute="height" secondItem="D77-hr-UPR" secondAttribute="height" id="Vfv-zG-Ope"/>
+                    <constraint firstItem="uVg-ad-1VI" firstAttribute="top" secondItem="D77-hr-UPR" secondAttribute="bottom" constant="10" id="WcN-OE-TbI"/>
+                    <constraint firstItem="vbQ-bC-fxU" firstAttribute="top" secondItem="chM-FL-suc" secondAttribute="bottom" constant="10" id="XAS-jX-a7s"/>
+                    <constraint firstAttribute="bottom" secondItem="vbQ-bC-fxU" secondAttribute="bottom" id="abw-TE-vNM"/>
+                    <constraint firstItem="vbQ-bC-fxU" firstAttribute="leading" secondItem="fDr-Oj-6K9" secondAttribute="leading" constant="10" id="ewq-Mz-BTb"/>
+                    <constraint firstItem="D77-hr-UPR" firstAttribute="top" secondItem="fDr-Oj-6K9" secondAttribute="top" constant="15" id="fog-I4-3nv"/>
+                    <constraint firstItem="chM-FL-suc" firstAttribute="top" secondItem="uVg-ad-1VI" secondAttribute="bottom" constant="10" id="pEV-fo-Hh2"/>
+                    <constraint firstAttribute="trailing" secondItem="D77-hr-UPR" secondAttribute="trailing" constant="15" id="qSC-bg-9KG"/>
+                    <constraint firstItem="chM-FL-suc" firstAttribute="leading" secondItem="D77-hr-UPR" secondAttribute="leading" id="qez-5x-1bl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="z0d-yw-ucO"/>
+            <connections>
+                <outlet property="addressLabel" destination="uVg-ad-1VI" id="BsQ-Gl-QYD"/>
+                <outlet property="cinemaLabel" destination="D77-hr-UPR" id="l79-60-dLP"/>
+                <outlet property="collectionView" destination="vbQ-bC-fxU" id="Z0h-k5-Wga"/>
+                <outlet property="languageLabel" destination="chM-FL-suc" id="gNA-Jh-KMm"/>
+            </connections>
+            <point key="canvasLocation" x="258.69565217391306" y="108.48214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

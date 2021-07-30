@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="alk-sanet.ttf">
+            <string>ALKSanet</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DLZ-C0-sn1" customClass="TimeCell" customModule="Final" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="122" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="122" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRj-cV-WlC" customClass="CustomButton" customModule="Final" customModuleProvider="target">
+                        <rect key="frame" x="26" y="17.5" width="70" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="v6s-z8-Vgi"/>
+                            <constraint firstAttribute="width" constant="70" id="z7r-JQ-U1V"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ALKSanet" family="ALK Sanet" pointSize="17"/>
+                        <state key="normal" title="15:30">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="testAction:" destination="DLZ-C0-sn1" eventType="touchUpInside" id="zLX-9v-IFd"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="6CQ-jo-RRi"/>
+            <constraints>
+                <constraint firstItem="RRj-cV-WlC" firstAttribute="centerX" secondItem="DLZ-C0-sn1" secondAttribute="centerX" id="SYJ-4X-V3b"/>
+                <constraint firstItem="RRj-cV-WlC" firstAttribute="centerY" secondItem="DLZ-C0-sn1" secondAttribute="centerY" id="fM4-8m-rca"/>
+            </constraints>
+            <size key="customSize" width="122" height="70"/>
+            <connections>
+                <outlet property="timeButton" destination="RRj-cV-WlC" id="Tup-hp-Oq5"/>
+            </connections>
+            <point key="canvasLocation" x="192.75362318840581" y="129.24107142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

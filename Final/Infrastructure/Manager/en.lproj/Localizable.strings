@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Final
+
+  Created by Mariami on 7/24/21.
+  
+*/
+
+"currentLanguage" = "English";
+"theme" = "Change Theme";
+"continue" = "Continue";
+"finish" = "Finish";
+"registration" = "Sign Up";
+"logIn" = "Sign In";
+"name" = "Enter  Name";
+"surname" = "Enter Lastname";
+"email" = "email";
+"privateNumber" = "Enter private number";
+"password" = "Enter password";
+"confirmPassword" = "Confirm Password";
+"language" = "Language";
+"settings" = "Settings";
+"selectLanguage" = "Select Language";
+"georgian" = "ქართული";
+"english" = "English";
+"eng" = "Eng";
+"rus" = "Rus";
+"geo" = "Geo";
+"cancel" = "Cancel";
+"currentPassword" = "Current Password";
+"changePassword" = "Change Password";
+"savePassword" = "Save Password";
+"newPassword" = "New Password";
+"cancelFilter" = "Cancel Filter";
+"cinema" = "Cinema";
+"genre" = "Genre";
+"chooseCinema" = "Choose Cinema";
+"chooseGenre" = "Choose Genre";
+"filter" = "Filter";
+"buy" = "Buy";
+"selectSeat"= " Select Seat";
+"movies" = "Movies";
+"tickets" = "Tickets";
+"account" = "Account";
+"signOut" = " Sign Out";

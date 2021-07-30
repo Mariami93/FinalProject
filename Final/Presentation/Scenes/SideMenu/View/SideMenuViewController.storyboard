@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side Menu View Controller-->
+        <scene sceneID="rSn-Wm-HfY">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuViewController" id="Rlu-Gf-a6Z" customClass="SideMenuViewController" customModule="Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="br5-Z4-4e1">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TBC_logo" translatesAutoresizingMaskIntoConstraints="NO" id="pi3-C3-KHe">
+                                <rect key="frame" x="0.0" y="44" width="250" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0Gm-i2-Vj8"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L51-Yc-6dF">
+                                <rect key="frame" x="0.0" y="104" width="250" height="758"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wo2-7d-onU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pi3-C3-KHe" firstAttribute="top" secondItem="wo2-7d-onU" secondAttribute="top" id="IqW-KT-tie"/>
+                            <constraint firstItem="wo2-7d-onU" firstAttribute="trailing" secondItem="pi3-C3-KHe" secondAttribute="trailing" id="J9I-uT-aOy"/>
+                            <constraint firstItem="L51-Yc-6dF" firstAttribute="leading" secondItem="wo2-7d-onU" secondAttribute="leading" id="LQR-S6-gTT"/>
+                            <constraint firstItem="wo2-7d-onU" firstAttribute="bottom" secondItem="L51-Yc-6dF" secondAttribute="bottom" id="ZOn-bK-Xu2"/>
+                            <constraint firstItem="pi3-C3-KHe" firstAttribute="leading" secondItem="wo2-7d-onU" secondAttribute="leading" id="eCW-4d-d58"/>
+                            <constraint firstItem="wo2-7d-onU" firstAttribute="trailing" secondItem="L51-Yc-6dF" secondAttribute="trailing" id="rYf-A8-LUZ"/>
+                            <constraint firstItem="L51-Yc-6dF" firstAttribute="top" secondItem="pi3-C3-KHe" secondAttribute="bottom" id="tpc-pd-ldJ"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="250" height="896"/>
+                    <connections>
+                        <outlet property="sideMenuTableView" destination="L51-Yc-6dF" id="8fb-g3-dld"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ah-Z9-ap0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TBC_logo" width="136" height="45"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

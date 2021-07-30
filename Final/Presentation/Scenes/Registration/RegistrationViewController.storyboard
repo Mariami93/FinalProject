@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w0N-Q5-qVK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration View Controller-->
+        <scene sceneID="Xnr-Ws-ymL">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationViewController" id="w0N-Q5-qVK" customClass="RegistrationViewController" customModule="Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vdn-ky-s3c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tzk-5K-8gy" customClass="LocalizedTextField" customModule="Final" customModuleProvider="target">
+                                <rect key="frame" x="20" y="104" width="364" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pbS-RE-u7l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DY9-I1-kG4" customClass="LocalizedTextField" customModule="Final" customModuleProvider="target">
+                                <rect key="frame" x="20" y="164" width="364" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32I-zD-GN0" customClass="LocalizedTextField" customModule="Final" customModuleProvider="target">
+                                <rect key="frame" x="20" y="224" width="364" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-iu-8eJ" customClass="LocalizedTextField" customModule="Final" customModuleProvider="target">
+                                <rect key="frame" x="20" y="344" width="364" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirmPassword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2T-e9-NUK" customClass="LocalizedTextField" customModule="Final" customModuleProvider="target">
+                                <rect key="frame" x="20" y="404" width="364" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wst-xD-iBa" customClass="LocalizedButton" customModule="Final" customModuleProvider="target">
+                                <rect key="frame" x="20" y="504" width="364" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Tjo-Ec-0Es"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="რეგისტრაცია">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="key" value="registration"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpTapped:" destination="w0N-Q5-qVK" eventType="touchUpInside" id="P0O-j6-yH5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="privateNumber" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yaq-YP-X2u" customClass="LocalizedTextField" customModule="Final" customModuleProvider="target">
+                                <rect key="frame" x="20" y="284" width="364" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Seb-S9-q7b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DY9-I1-kG4" firstAttribute="top" secondItem="Tzk-5K-8gy" secondAttribute="bottom" constant="20" id="1X5-bc-nQU"/>
+                            <constraint firstItem="NTt-iu-8eJ" firstAttribute="top" secondItem="yaq-YP-X2u" secondAttribute="bottom" constant="20" id="4hD-fi-Svi"/>
+                            <constraint firstItem="yaq-YP-X2u" firstAttribute="top" secondItem="32I-zD-GN0" secondAttribute="bottom" constant="20" id="5LR-Nx-vpC"/>
+                            <constraint firstItem="DY9-I1-kG4" firstAttribute="height" secondItem="Tzk-5K-8gy" secondAttribute="height" id="7nW-xh-Pat"/>
+                            <constraint firstItem="NTt-iu-8eJ" firstAttribute="trailing" secondItem="Tzk-5K-8gy" secondAttribute="trailing" id="8ha-jA-gmJ"/>
+                            <constraint firstItem="yaq-YP-X2u" firstAttribute="trailing" secondItem="Tzk-5K-8gy" secondAttribute="trailing" id="Gyv-Qg-oAB"/>
+                            <constraint firstItem="Tzk-5K-8gy" firstAttribute="top" secondItem="Seb-S9-q7b" secondAttribute="top" constant="60" id="Hxd-ZL-ctr"/>
+                            <constraint firstItem="DY9-I1-kG4" firstAttribute="trailing" secondItem="Tzk-5K-8gy" secondAttribute="trailing" id="Ne3-Ll-UKS"/>
+                            <constraint firstItem="yaq-YP-X2u" firstAttribute="leading" secondItem="Tzk-5K-8gy" secondAttribute="leading" id="Oyh-ff-fAk"/>
+                            <constraint firstItem="32I-zD-GN0" firstAttribute="trailing" secondItem="Tzk-5K-8gy" secondAttribute="trailing" id="Qqt-ub-Pyy"/>
+                            <constraint firstItem="B2T-e9-NUK" firstAttribute="top" secondItem="NTt-iu-8eJ" secondAttribute="bottom" constant="20" id="RW2-hW-Dx9"/>
+                            <constraint firstItem="B2T-e9-NUK" firstAttribute="height" secondItem="Tzk-5K-8gy" secondAttribute="height" id="U6K-Us-cr7"/>
+                            <constraint firstItem="Seb-S9-q7b" firstAttribute="trailing" secondItem="Tzk-5K-8gy" secondAttribute="trailing" constant="30" id="UO4-Db-xVi"/>
+                            <constraint firstItem="Tzk-5K-8gy" firstAttribute="leading" secondItem="Seb-S9-q7b" secondAttribute="leading" constant="20" id="WQn-hM-Atr"/>
+                            <constraint firstItem="wst-xD-iBa" firstAttribute="top" secondItem="B2T-e9-NUK" secondAttribute="bottom" constant="60" id="Ws5-66-6pZ"/>
+                            <constraint firstItem="NTt-iu-8eJ" firstAttribute="leading" secondItem="Tzk-5K-8gy" secondAttribute="leading" id="Z7z-Eh-ZJM"/>
+                            <constraint firstItem="NTt-iu-8eJ" firstAttribute="height" secondItem="Tzk-5K-8gy" secondAttribute="height" id="Zh6-TC-Ss5"/>
+                            <constraint firstItem="yaq-YP-X2u" firstAttribute="height" secondItem="Tzk-5K-8gy" secondAttribute="height" id="dIv-hT-Seg"/>
+                            <constraint firstItem="B2T-e9-NUK" firstAttribute="leading" secondItem="Tzk-5K-8gy" secondAttribute="leading" id="eCM-Ez-6Yb"/>
+                            <constraint firstItem="wst-xD-iBa" firstAttribute="leading" secondItem="Tzk-5K-8gy" secondAttribute="leading" id="fGQ-vn-Mt0"/>
+                            <constraint firstItem="32I-zD-GN0" firstAttribute="height" secondItem="Tzk-5K-8gy" secondAttribute="height" id="gGl-9I-t06"/>
+                            <constraint firstItem="32I-zD-GN0" firstAttribute="leading" secondItem="Tzk-5K-8gy" secondAttribute="leading" id="ngX-HV-QVY"/>
+                            <constraint firstItem="DY9-I1-kG4" firstAttribute="leading" secondItem="Tzk-5K-8gy" secondAttribute="leading" id="nxM-h4-G61"/>
+                            <constraint firstItem="B2T-e9-NUK" firstAttribute="trailing" secondItem="Tzk-5K-8gy" secondAttribute="trailing" id="qAx-6V-Qw5"/>
+                            <constraint firstItem="32I-zD-GN0" firstAttribute="top" secondItem="DY9-I1-kG4" secondAttribute="bottom" constant="20" id="qRY-2w-2T3"/>
+                            <constraint firstItem="wst-xD-iBa" firstAttribute="trailing" secondItem="Tzk-5K-8gy" secondAttribute="trailing" id="xR3-Uf-83i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordField" destination="B2T-e9-NUK" id="3cm-y7-YsO"/>
+                        <outlet property="emailField" destination="32I-zD-GN0" id="NpB-Sw-3lq"/>
+                        <outlet property="lastNameField" destination="DY9-I1-kG4" id="lax-eX-2aV"/>
+                        <outlet property="nameField" destination="Tzk-5K-8gy" id="iny-4d-7iy"/>
+                        <outlet property="passwordField" destination="NTt-iu-8eJ" id="uL0-UU-U9b"/>
+                        <outlet property="privateNumberField" destination="yaq-YP-X2u" id="Una-QD-JAV"/>
+                        <outlet property="registrationBtn" destination="wst-xD-iBa" id="1te-BB-Ric"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Es-RJ-p7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-465" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
